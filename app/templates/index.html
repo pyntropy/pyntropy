@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site_name }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            border-bottom: 2px solid #3b82f6;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 2.5rem;
+        }
+
+        .logo {
+            font-family: monospace;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #3b82f6;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #6b7280;
+            margin: 20px 0;
+        }
+
+        .author {
+            background: #f3f4f6;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .features {
+            margin: 30px 0;
+        }
+
+        .feature {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #10b981;
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.9rem;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">{{ site_name }}</div>
+    <div class="quote">Вся наша деятельность – это борьба с энтропией. Процесс этот, понятное дело, бесконечный.</div>
+    <div class="author">Аркадий Волож</div>
+</header>
+
+<main>
+    <section>
+        <p>
+            В команде разработки у всех есть путь к отступлению. Программисты могут указать на ТЗ, бизнес — на
+            изменившиеся требования, любые участники процесса — на недопонимание или недостаток информации. У системного
+            аналитика такой возможности нет — на нём замыкается итоговый результат.
+        </p>
+        <p>
+            Если вы анализируете и проектируете системы, вы должны понимать, как работают их компоненты. Не на уровне
+            «здесь кэш», а на уровне «зачем, что именно и как мы кладём в этот кэш».
+        </p>
+        <p>
+            Pyntropy — не курсы «стать аналитиком с нуля». Это способ упорядочить знания для тех, кто уже в профессии.
+            Фокус на конкретных компонентах систем, чтобы буквально потрогать их — так, как это делают те, кто будет
+            воплощать ваши схемы в код.
+        </p>
+    </section>
+
+    <section class="features">
+        <h2>Что будет на платформе:</h2>
+
+        <div class="feature">
+            <strong>Автор и преподаватель - одно лицо</strong>
+        </div>
+
+        <div class="feature">
+            <strong>Экзамены</strong>
+        </div>
+    </section>
+
+
+</main>
+
+<footer>
+    <p>© {{ site_name }}, 2025.</p>
+    <p>Автор и разработчик: <a href="http://znmnsk.ru">Алексей Знаменский<a></a></p>
+</footer>
+</body>
+</html>
