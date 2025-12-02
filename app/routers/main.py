@@ -14,3 +14,4 @@ async def home(request: Request):
             "request": request,
             "site_name": "Pyntropy"
         })
+

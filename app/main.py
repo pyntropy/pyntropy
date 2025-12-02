@@ -12,3 +12,7 @@ app = FastAPI(
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 app.include_router(main_router)
 
+
+@app.get("/domains")
+async def get_domains():
+    pass
