@@ -1,7 +1,5 @@
 from .connection import (
-    connection_pool,
-    open_connection_pool,
-    close_connection_pool,
-    get_connection,
-    release_connection
+    get_async_connection,
+    get_sync_connection,
+    get_connection_string
 )
