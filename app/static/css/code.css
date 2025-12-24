@@ -1,0 +1,60 @@
+/* Стили для блоков кода */
+pre code {
+    display: block;
+    padding: 1em;
+    border-radius: 8px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+/* Контейнер для предпросмотра кода */
+.hljs {
+    margin: 1.5em 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для inline кода */
+code:not(pre code) {
+    background-color: #2d333b;
+    color: #e06c75;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+    border: 1px solid #444c56;
+    font-weight: 500;
+}
+
+
+
+/* Стили для тега definition */
+definition {
+    display: block;
+    background-color: #2d3748; /* Серый фон */
+    color: #ffffff; /* Белые буквы */
+    padding: 1.2em 1.5em;
+    border-radius: 12px; /* Скругленные углы */
+    margin: 1.5em 0;
+    border-left: 4px solid #4299e1; /* Синяя полоса слева */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Иконка или маркер перед definition */
+definition::before {
+    content: "ℹ️";
+    margin-right: 0.8em;
+    font-size: 1.1em;
+    vertical-align: middle;
+}
+
+/* Анимация при наведении */
+definition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease;
+}
