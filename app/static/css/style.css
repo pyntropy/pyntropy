@@ -1,0 +1,145 @@
+/* Сброс отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+/* Контейнер для центрирования */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+    min-height: calc(100vh - 60px); /* Вычитаем высоту подписи */
+}
+
+/* Обертка для изображения */
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+}
+
+/* Основное изображение */
+.main-image {
+    width: 20vw; /* 1/5 часть ширины экрана */
+    min-width: 300px;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain; /* Для логотипа лучше contain */
+}
+
+/* Цитата под изображением */
+.quote {
+    margin-top: 40px;
+    font-size: 1.0rem;
+    color: #333;
+    text-align: center;
+    max-width: 700px;
+    line-height: 1.8;
+    padding: 0 20px;
+    font-style: italic;
+    font-weight: 300;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+/* Каждая строка цитаты */
+.quote br {
+    display: block;
+    margin: 8px 0;
+    content: "";
+}
+
+/* Автор цитаты */
+.author {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 300;
+    color: #666;
+    font-size: 1.0rem;
+}
+
+/* Футер - просто надпись на белом фоне */
+.signature {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Чисто белый фон */
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #333;
+    letter-spacing: 0.5px;
+    /* Убраны все эффекты и границы */
+    border: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .main-image {
+        width: 50vw;
+        min-width: 250px;
+    }
+    
+    .quote {
+        font-size: 1.1rem;
+        margin-top: 30px;
+        padding: 0 15px;
+        line-height: 1.7;
+    }
+    
+    .author {
+        font-size: 1.1rem;
+        margin-top: 12px;
+    }
+    
+    .signature {
+        padding: 18px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-image {
+        width: 80vw;
+        min-width: 200px;
+    }
+    
+    .quote {
+        font-size: 1rem;
+        margin-top: 25px;
+        line-height: 1.6;
+    }
+    
+    .author {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .signature {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
