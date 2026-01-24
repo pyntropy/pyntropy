@@ -13,3 +13,5 @@ wheels/
 
 # Temporary files
 temp/
+/logs/
+/.env
