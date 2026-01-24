@@ -1,0 +1,16 @@
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: pyntropy_container
+    environment:
+      POSTGRES_DB: pyntropy_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: pass
+    ports:
+    - "5432:5432"
+    volumes:
+    - pyntropy_db:/var/lib/postgresql/data
+
+volumes:
+  pyntropy_db:

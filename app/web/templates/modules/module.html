@@ -4,9 +4,14 @@
 <h1>{{ stub|title }}</h1>
 <p>Содержимое модуля "{{ stub }}" будет здесь.</p>
 <button hx-get="/steps/"
-   hx-target="#step"
-   hx-swap="outherHTML">
+        hx-target="#step"
+        hx-swap="outherHTML">
     Заменятор текста
 </button>
 <p id="step"> Этот текст надо заменить</p>
+<div>
+    {% for s in module.steps %}
+    <div>{{s.title}}</div>
+    {% endfor %}
+</div>
 {% endblock %}
